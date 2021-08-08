@@ -1,0 +1,415 @@
+@media all and (max-width:1440px){
+
+	/* =======  Home page  ======= */
+	
+	.header-logo {
+		width: 12%;
+	}
+	.header-content ul {
+		flex-wrap: unset;
+		margin-right: 25px;
+	}
+	.header-content ul li {
+		padding-right: 25px;
+	}
+	.header-content ul li p {
+		font-size: 12px;
+		line-height: 32px;
+		margin-bottom: 7px;
+	}
+	.header-content ul li a {
+		font-size: 30px;
+	}
+	.btn-bar {
+		width: 60px;
+	}
+
+	.banner-main-area {
+		background-position: bottom;
+		margin-top: -16px;
+		padding: 0px 0 0px;
+		background-size: unset;
+	}
+	.banner-area {
+	padding-bottom: 20px;
+}
+	.banner-main-content h2 {
+		font-size: 36px;
+	}
+	.banner-main-content strong {
+		font-size: 53px;
+	}
+	.banner-main-content p {
+		font-size: 20px;
+	}
+	.banner-text-content {
+		margin: 30px -270px 0 0;
+		padding-left: 40px;
+	}
+	.text-1 h6, .text-2 h6, .text-3 h6 {
+		font-size: 16px;
+		margin-bottom: 3px;
+	}
+	.text-1 p, .text-2 p, .text-3 p {
+		font-size: 12px;
+		width: 52%;
+	}
+	.text-1, .text-2, .text-3 {
+		margin-bottom: 12px;
+	}
+	.text-3 {
+	    margin-bottom: 0px;
+	}
+	.banner-last-content img {
+		width: 2%;
+	}
+	.banner-last-content {
+		margin-top: 8px;
+	}
+	.banner-last-content p {
+		margin-top: 4px;
+		width: 70%;
+		line-height: 16px;
+		font-size: 12px; 
+	}
+
+	.video-area {
+		background-size: cover;
+		height: 300px;
+		text-align: center;
+		padding: 155px 0 0;
+	}
+	.video i {
+		width: 50px;
+		height: 50px;
+		font-size: 24px;
+	}
+	.video {
+		border: none;
+		margin-bottom: 8px;
+	}
+	.video-text p {
+		font-size: 18px;
+	}
+	.video-text h6 {
+		font-size: 32px;
+	}
+	.dc-image {
+		width: 50%;
+		margin: 0 auto 16px;
+	}
+	.dc-contents h4 {
+		font-size: 28px;
+		line-height: 36px;
+		margin-bottom: 16px;
+	}
+	.dc-contents p {
+		font-size: 17px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+
+	.services-area {
+		padding: 100px 0;
+	}
+	.service-header h4::before {
+		left: 40px;
+	}
+	.service-header h4::after {
+		left: 132px;
+	}
+	.ts-head h4::before {
+		left: 40px;
+	}
+	.ts-head h4::after {
+		left: 150px;
+	}
+
+	.t-header h4::before {
+		left: 60px;
+	}
+	.t-header h4::after {
+		left: 170px;
+	}
+	.single-review {
+		margin: 0 10px;
+		padding: 45px 20px;
+	}
+	.single-review h6 {
+		font-size: 22px;
+	}
+	.single-review p {
+		font-size: 15px;
+		line-height: 22px;
+		margin: 18px 0 6px;
+	}
+	.t-video {
+		background-size: cover;
+		margin: 0px 150px;
+		padding: 0;
+		height: 330px;
+		background-position: center;
+	}
+	.appiontment-main-area {
+		margin: 80px 0;
+	}
+
+	.finance h2::before {
+		left: -70px;
+	}
+	.finance h2::after {
+		left: -4px;
+	}
+	.woman img {
+		width: 75%;
+		height: 360px;
+		bottom: -130px;
+	}
+
+	.pc-head h2::before {
+		right: 15%;
+	}
+	.pc-head h2::after {
+		right: 24%;
+	}
+	.pa-percentage {
+		padding: 0;
+	}
+	.treatment-content {
+		margin-left: 10px;
+	}
+	.pa-percentage strong {
+		font-size: 56px;
+	}
+	.treatment-content h4 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.treatment-content span {
+		font-size: 15px;
+	}
+	.treatment-content p {
+		font-size: 13px;
+		line-height: 18px;
+		margin-top: 6px;
+	}
+	.p-appiont {
+		padding-bottom: 60px;
+	}
+
+	.cosmetic-dentist-main-area {
+		padding: 100px 0;
+	}
+	.office {
+		width: 60%;
+	}
+	.cosmetic-dentist-content {
+		width: 60%;
+		padding: 60px 50px;
+		bottom: 150px;
+	}
+	.cd-top {
+		font-size: 22px;
+		line-height: 40px;
+	}
+	.cd-content h4 {
+		font-size: 24px;
+		line-height: 32px;
+		margin-top: 8px;
+	}
+	.cd-content p {
+		line-height: 25px;
+		margin-top: 14px;
+		font-size: 17px;
+	}
+	.cd-image {
+		width: 500%;
+	}
+	.cosmetic-dentist-content {
+		bottom: 165px;
+	}
+	.cosmetic-dentist-area {
+		background-position: 79% 11%;
+		background-size: auto 9%;
+	}
+
+	.ds-head span {
+		font-size: 25px;
+		line-height: 42px;
+	}
+	.ds-head h4 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+	.ds-head {
+		top: 4%;
+		padding: 32px 24px;
+	}
+	.dental-staff-content p {
+		font-size: 18px;
+		line-height: 22px;
+		padding: 250px 35px 5px 110px;
+	}
+
+	.footer-contact-area {
+		padding-top: 45px;
+	}
+	.fc-logo {
+		top: -3%;
+	}
+	.fc-contact {
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+	.fc-info ul li a {
+		font-size: 15px;
+		width: 290px;
+	}
+	.fc-info ul li a i {
+		margin-right: 10px;
+	}
+	.ot-service h6, .ot-hours h6, .location h6 {
+		font-size: 17px;
+		line-height: 22px;
+		border-left: 3px solid #0bb5b3;
+	}
+	.location h6 {
+		margin-left: 0;
+	}
+	.ot-service a {
+		line-height: 36px;
+		padding-right: 0px;
+		font-size: 13px;
+		width: 70%;
+	}
+	.ot-service {
+		width: 40%;
+	}
+	.ot-hours {
+		margin-left: -25px;
+	}
+	.week ul li {
+		font-size: 13px;
+		line-height: 34px;
+	}
+	.time ul li {
+		font-size: 13px;
+		line-height: 34px;
+		margin-left: 6px;
+	}
+
+	.location {
+		padding-left: 0px;
+		margin-right: -50px;
+	}
+	.location a {
+		width: 80%;
+	}
+
+
+	.about-content-area h2, .testimonials-area h2, .team-area h2 {
+		font-size: 48px;
+		line-height: 62px;
+		padding-top: 30px;
+	}
+	.testimonial-contents {
+		margin-top: 12px;
+	}
+	.team-area h2 {
+	    font-size: 45px;
+	}
+	.hygienists h5 {
+		font-size: 38px;
+		line-height: 40px;
+		margin-bottom: 55px;
+	}
+	.sh-image {
+		width: 46%;
+	}
+	.sh-content p {
+		font-size: 17px;
+		line-height: 22px;
+		margin-top: 16px;
+	}
+	.profile-banner-area {
+		padding-top: 130px;
+	}
+	.truth {
+		font-size: 26px;
+	}
+	.p-dr {
+		font-size: 36px;
+		line-height: 40px;
+		margin: 48px 0 18px;
+	}
+	.pb-area h2 {
+		font-size: 42px;
+		line-height: 50px;
+		margin-bottom: 18px;
+	}
+	.about-cosmetic-dentistry-area h2, .contact-page-area h2 {
+		font-size: 36px;
+		line-height: 43px;
+		padding-top: 44px;
+	}
+	.contact-content {
+		margin-top: 10px;
+	}
+	.contact-page-main-area::before {
+		height: 13%;
+		top: 5.8%;
+		background-size: cover;
+		background-position: unset;
+	}
+	.contact-content {
+		padding: 410px 60px 60px;
+	}
+	.sms-area button {
+		padding: 4px 25px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@media all and (max-width:1024px){
+
+	/* =======  Home page  ======= */
+	
+
+
+	/* .contact-page-main-area::before {
+	    content: "";
+	    position: absolute;
+	    background: url(img/location.png);
+	    background-repeat: no-repeat;
+	    width: 100%;
+	    height: 100%;
+	    top: 9%;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    background-size: contain;
+	    object-fit: cover;
+	} */
+	
+}
+
+
+@media all and (max-width:1200px){
+	
+}
+
+
+@media all and (max-width:991px){
+	
+}
+
+
+@media all and (max-width: 320px){
+	
+}
+
+
+
+
+

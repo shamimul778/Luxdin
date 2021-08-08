@@ -1,0 +1,2603 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: Version College
+	Template URI: http://coderitem.com
+	Description: This is Version College web site. 
+	Author: SA Bappy
+	Author URI: http://sabappy.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Top Area 
+    3. Header Area 
+	4. Iteam Area
+	5. Footer Area
+    6. Footer Area
+    7. Footer Area
+    7. Footer Area
+    8. Footer Area
+    10. Footer Area
+    11. Footer Area
+    12. Footer Area
+    13. Footer Area
+    14. Footer Area
+    15. Footer Area
+    16. Footer Area
+    17. Footer Area
+    18. Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------
+
+    font-family: 'Porsche Next TT';
+    font-family: 'HP-Impact';
+
+-----------------------------------------------------------------------------------*/
+
+
+/*****************************************************/
+/**************    1. Typography   *******************/
+/*****************************************************/
+
+@font-face {
+    font-family: 'Porsche Next TT';
+    src: url('fonts/PorscheNextTT-Bold.woff2') format('woff2'),
+        url('fonts/PorscheNextTT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Porsche Next TT';
+    src: url('fonts/PorscheNextTT-Regular.woff2') format('woff2'),
+        url('fonts/PorscheNextTT-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Porsche Next TT';
+    src: url('fonts/PorscheNextTT-Thin.woff2') format('woff2'),
+        url('fonts/PorscheNextTT-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'HP-Impact';
+    src: url('fonts/HP-ImpactBold.woff2') format('woff2'),
+        url('fonts/HP-ImpactBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Muli';
+    src: url('fonts/Muli.woff2') format('woff2'),
+        url('fonts/Muli.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Muli';
+    src: url('fonts/Muli-Bold.woff2') format('woff2'),
+        url('fonts/Muli-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Impact';
+    src: url('fonts/Impact.woff2') format('woff2'),
+        url('fonts/Impact.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body, html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Porsche Next TT';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    background: #FFFFFF;
+	scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Porsche Next TT';
+    font-weight: bold;
+}
+p {
+    font-family: 'Porsche Next TT';
+    font-weight: 400;
+}
+
+img {
+    border: none;
+    max-width: 100%
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+	list-style: none;
+}
+button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.justify-center {
+	justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.no-padding {
+    padding: 0;
+}
+.justify-start {
+	justify-content: flex-start;
+}
+.np {
+    padding: 0;
+}
+
+
+  /*****************************************************/
+ /**************    2. Header Top Area   ****************/
+/*****************************************************/
+
+.header-top-main-area {
+    background: #fff;
+    overflow: hidden;
+}
+.header-top-main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header-logo {
+    position: relative;
+    z-index: 9;
+}
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+.header-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    border-right: 1px solid #707070;
+}
+.header-content ul li {
+    text-align: right;
+    padding-right: 30px;
+}
+.header-content ul li a:hover {
+    color: #000;
+}
+.header-content ul li p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 37px;
+    color: #58595b;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.header-content ul li a {
+    font-weight: bold;
+    font-size: 39px;
+    color: #0bb5b3;
+    text-transform: uppercase;
+    transition: 0.3s
+}
+.btn-bar {
+    width: 65px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-bar span {
+    width: 100%;
+    height: 2px;
+    background: #000;
+    margin: 5px 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn-bar:hover .single-bar {
+    width: 70%;
+}
+
+
+  /*****************************************************/
+ /**************    3. Banner Area     ******************/
+/*****************************************************/
+
+.banner-main-area {
+    background: url(img/home/banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: -20px;
+    padding: 350px 0 50px;
+}
+.banner-contents-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.banner-main-content h2 {
+    font-weight: 100;
+    font-size: 54px;
+    line-height: 46px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.banner-main-content strong {
+    font-weight: 800;
+    font-size: 80px;
+    letter-spacing: 0.02em;
+    line-height: 87px;
+    color: #ede6cd;
+    text-transform: uppercase;
+}
+.banner-main-content p {
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    color: #ede6cd;
+    text-transform: uppercase;
+    padding-top: 6px;
+}
+.banner-text-content {
+    margin: 70px -290px 0px 0;
+    padding-left: 50px;
+    border-left: 1px solid #fff;
+}
+.text-1, .text-2, .text-3 {
+    margin-bottom: 30px;
+}
+.text-1 h6, .text-2 h6, .text-3 h6 {
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    color: #ede6cd;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.text-1 p, .text-2 p, .text-3 p {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    color: #fff;
+    width: 55%;
+}
+.text-1 p a {
+    text-decoration: underline;
+    color: #fff;
+}
+.text-1 p a:hover {
+    color: #0056B3;
+}
+.text-3 {
+    margin-bottom: 0px;
+}
+.banner-last-content {
+    text-align: center;
+    margin-top: 20px;
+}
+.banner-last-content p {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+.banner-last-content p strong {
+}
+.banner-last-content p a {
+    text-decoration: underline;
+    color: #fff;
+}
+.banner-last-content p a:hover {
+    color: #0056B3;
+}
+.banner-last-content p {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 75%;
+    line-height: 20px;
+}
+
+
+  /*****************************************************/
+ /**************    4. Dental Care Experience Area  ****************/
+/*****************************************************/
+
+video {
+	position: absolute;
+	bottom: -219%;
+}
+
+
+
+.dental-care-experience-main-area {
+	background: #fff;
+	overflow: hidden;
+}
+.dental-care-experience {
+    display: flex;
+    justify-content: center;
+}
+.video-link {
+    display: none;
+}
+.video-area {
+	background: url(img/home/Group-389.png);
+	background-repeat: no-repeat;
+	padding: 235px 0 25px;
+	text-align: center;
+	background-size: cover;
+}
+.video {
+	border: none;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.22);
+	padding: 8px;
+	border-radius: 100%;
+	margin-bottom: 15px;
+    transition: 0.3s;
+}
+.video:hover {
+	transform: scale(1.2);
+}
+.video i {
+	color: #69ACCC;
+	background: #FFFF00;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	border: 2px solid #3D4F71;
+	padding-left: 5px;
+}
+.video-text p {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+.video-text h6 {
+	font-weight: 800;
+	font-size: 37px;
+	letter-spacing: 0.02em;
+	color: #000;
+	text-transform: capitalize;
+	margin-top: 5px;
+}
+.dc-logo {
+    padding: 35px 35px 48px 25px;
+}
+.dc-logo img {
+    min-width: 115px;
+}
+.video-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #0BB5B3;
+	margin-top: 20px;
+}
+.dc-logo-content p {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;
+    color: #fff;
+    background: #0BB5B3;
+    padding: 30px 25px;
+}
+.dc-image {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.dc-contents {
+	width: 85%;
+    margin-left: 20px;
+}
+.dc-contents h4 {
+	font-weight: 800;
+	font-size: 40px;
+	letter-spacing: 0.02em;
+	line-height: 47px;
+	color: #000;
+	margin-bottom: 20px;
+}
+.dc-contents p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #2e2d26;
+	margin-bottom: 15px;
+}
+
+
+  /*****************************************************/
+ /**************    5. Service Area  ****************/
+/*****************************************************/
+
+.service-header {
+    text-align: center;
+    position: relative;
+}
+.service-header::before {
+    content: "";
+    background: url(img/home/bg.png);
+    background-repeat: no-repeat;
+    width: 680px;
+    height: 120px;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.service-header h4 {
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 122px;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto;
+    margin-left: 135px;
+}
+.service-header h4::before {
+    content: "";
+    position: absolute;
+    z-index: 9;
+    background: url(img/home/teeth.png);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-size: 100% 100%;
+    left: 125px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.service-header h4::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 90px;
+    background: #000;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 223px;
+    transform: rotate(19deg);
+}
+.service-header p {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 41px;
+    color: #000;
+    margin-top: 5px;
+}
+.services-area {
+    padding: 130px 0;
+}
+.multiple-service {
+    margin-top: 90px;
+}
+.s-image-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-template-rows: 200px 200px;
+}
+.image-grid-1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    margin-top: 90px;
+}
+.image-grid-2 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+    margin-bottom: 90px;
+}
+.image-grid-3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.image-grid-4 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.image-grid-5 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    margin-top: -90px;
+}
+.image-grid-6 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.image-grid-7 {
+    grid-column: 3/4;
+    grid-row: 4/6;
+}
+.image-grid-1 a, .image-grid-2 a, .image-grid-3 a, .image-grid-4 a, .image-grid-5 a, .image-grid-6 a, .image-grid-7 a {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-grid-1 a::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/home/implant.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 90px;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+.image-grid-1 a img, .image-grid-2 a img, .image-grid-3 a img, .image-grid-4 a img, .image-grid-5 a img, .image-grid-6 a img, .image-grid-7 a img {
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-grid-1 a h4, .image-grid-2 a h4, .image-grid-3 a h4, .image-grid-4 a h4, .image-grid-5 a h4, .image-grid-6 a h4, .image-grid-7 a h4 {
+    position: absolute;
+    bottom: 25px;
+    font-weight: 800;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    left: 100px;
+}
+.image-grid-1 a:hover img, .image-grid-2 a:hover img, .image-grid-3 a:hover img, .image-grid-4 a:hover img, .image-grid-5 a:hover img, .image-grid-6 a:hover img, .image-grid-7 a:hover img {
+    transform: scale(1.1);
+}
+.image-grid-2 a::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/home/Group-1221.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 90px;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+.image-grid-3 a::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/home/Group-1221.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 90px;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+.image-grid-4 a::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/home/Group-1221.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 90px;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+.image-grid-5 a::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/home/Group-1221.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 90px;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+.image-grid-6 a::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/home/Group-1221.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 90px;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+.image-grid-7 a::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/home/Group-1221.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 90px;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+
+  /*****************************************************/
+ /**************    6. Dental Care Experience Area  ****************/
+/*****************************************************/
+
+.umanoff-meet-main-area {
+    padding-top: 20px;
+}
+.umanoff-meet-content {
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 60px;
+    border-right: 1px solid #707070;
+}
+.umanoff-meet-content h4 {
+    font-size: 40px;
+    line-height: 46px;
+    color: #000;
+    text-transform: uppercase;
+}
+.umanoff-meet-content p {
+    font-size: 20px;
+    line-height: 46px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.truth {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 29px;
+    line-height: 45px;
+    color: #0bb5b3;
+    position: relative;
+}
+.truth::before {
+    content: "";
+    position: absolute;
+    background: url(img/home/comma-i.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: -30px;
+}
+.truth::after {
+    content: "";
+    position: absolute;
+    background: url(img/home/comma-ii.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+    bottom: -10px;
+    right: -30px;
+}
+.signature {
+    margin-top: 30px;
+}
+.umanoff-content-texts {
+    padding-left: 20px;
+}
+.umanoff-meet-content img {
+    margin-bottom: 12px;
+}
+.umanoff-meet-content a {
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    line-height: 28px;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 50px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    padding: 0px 20px;
+    position: relative;
+}
+.umanoff-meet-content a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.umanoff-meet-content a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: 0.3s;
+}
+.umanoff-meet-content a:hover::before, .umanoff-meet-content a:hover::after {
+    width: 100%;
+}
+.uc-text-header {
+    position: relative;
+    margin-bottom: 30px;
+}
+.uc-text-header::before {
+    content: "";
+    background: url(img/home/DR_Umanoff.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    width: 540px;
+    height: 100px;
+    z-index: -1;
+    top: 12px;
+    bottom: 0;
+    margin: auto;
+}
+.uc-text-header p {
+    font-size: 30px;
+    line-height: 46px;
+    color: #000;
+    text-transform: uppercase;
+}
+.uc-text-header h2 {
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 0.02em;
+    line-height: 44px;
+    color: #000;
+    text-transform: uppercase;
+}
+.uc-text p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.uc-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.uc-contact a {
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    line-height: 21px;
+    color: #000;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    position: relative;
+}
+.uc-contact a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.uc-contact a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.uc-contact a:hover::before, .uc-contact a:hover::after {
+    width: 100%;
+}
+
+  /*****************************************************/
+ /**************    7. Team Service Area  ****************/
+/*****************************************************/
+
+.team-service-main-area {
+    padding: 150px 0;
+}
+.ts-head {
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+} 
+.ts-head::before {
+    content: "";
+    background: url(img/home/team.png);
+    background-repeat: no-repeat;
+    width: 680px;
+    height: 120px;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.ts-head h4 {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 122px;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto;
+    margin-left: 130px;
+}
+.ts-head h4::before {
+    content: "";
+    position: absolute;
+    z-index: 9;
+    background: url(img/home/teeth.png);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-size: 100% 100%;
+    left: 145px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.ts-head h4::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 90px;
+    background: #000;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 250px;
+    transform: rotate(19deg);
+}
+.ts-head p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.ts-content {
+    background: #F7F7F7;
+    padding: 16px 15px;
+    text-align: center;
+}
+.ts-member {
+    display: grid;
+    grid-template-columns: 256px 256px;
+    grid-gap: 30px;
+    justify-content: center;
+}
+.ts-single img {
+    margin-bottom: 10px;
+}
+.ts-content h6 {
+    font-family: 'Muli';
+    font-size: 18px;
+    line-height: 22px;
+    color: #0b1f40;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.ts-content p {
+    font-family: 'Muli';
+    font-weight: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #575a7b;
+}
+
+
+  /*****************************************************/
+ /**************    8. Testimonial Area  ****************/
+/*****************************************************/
+
+.testimonial-main-area {
+    position: relative;
+    background: #fff;
+    z-index: 5;
+}
+.testimonial-main-area::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 540px;
+    background: #F7F7F7;
+    z-index: -1;
+}
+.testimonial-header {
+    padding: 70px 0 10px;
+}
+.t-header {    
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 9
+}
+.t-header::before {
+    content: "";
+    background: url(img/home/Testimonials.png);
+    background-repeat: no-repeat;
+    width: 680px;
+    height: 130px;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+}
+.t-header h4 {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 122px;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-left: 130px;
+}
+.t-header h4::before {
+    content: "";
+    position: absolute;
+    z-index: 9;
+    background: url(img/home/teeth.png);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-size: 100% 100%;
+    left: 145px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.t-header h4::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 90px;
+    background: #000;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 250px;
+    transform: rotate(19deg);
+}
+.t-review {
+    display: flex;
+    margin: 20px 140px;
+}
+.single-review {
+    margin: 0 20px;
+    background: #0BB5B3;
+    padding: 70px 30px 50px 45px;
+}
+.star {
+    margin: 38px 0 15px;
+}
+.star i {
+    color: #ffba00;
+    font-size: 20px;
+    margin-right: 2px;
+}
+.single-review h6 {
+    font-weight: 800;
+    font-size: 25px;
+    color: #fff;
+}
+.single-review p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin: 30px 0 10px;
+}
+.single-review h2 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #fff;
+}
+.t-video {
+    background: url(img/home/ad-video.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0px 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 250px;
+}
+.t-video button {
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.22);
+    padding: 8px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.t-video button:hover {
+    transform: scale(1.3)
+}
+.t-video button i {
+    color: #69ACCC;
+    background: #FFFF00;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    border: 2px solid #3D4F71;
+    padding-left: 5px;
+}
+.video-p {
+    display: none;
+}
+
+
+  /*****************************************************/
+ /**************    9. Appiont Area  ****************/
+/*****************************************************/
+
+.appiontment-main-area {
+    background: #006583;
+    position: relative;
+    z-index: 0;
+    margin: 100px 0;
+}
+.appiontment-main-area::before {
+    position: absolute;
+    content: "";
+    background: url(img/home/call.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+    width: 60%;
+    height: 100%;
+}
+.appiont-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appiont-contact p {
+    font-size: 28px;
+    line-height: 50px;
+    color: #006583;
+    text-transform: uppercase;
+}
+.appiont-contact h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #006583;
+    text-transform: uppercase;
+}
+.appiont-contact a {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 50px;
+    color: #006583;
+}
+.appiont-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+}
+.appiont-content {
+    width: 41%;
+    margin-right: -4%;
+    background: #fff;
+    padding: 25px 65px;
+}
+.appiont-content a {
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    line-height: 21px;
+    color: #000;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    position: relative;
+    margin-top: 40px;
+}
+.appiont-content a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.appiont-content a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.appiont-content a:hover::before, .appiont-content a:hover::after {
+    width: 100%;
+}
+
+  /*****************************************************/
+ /**************    10. Promotion Area  ****************/
+/*****************************************************/
+
+.promotions-main-area {
+    position: relative;
+}
+.promotions-main-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background: #AFAFAF;
+    height: 100%;
+    z-index: -2;
+}
+.promotions-main-area::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background: #006583;
+    height: 100%;
+    z-index: -2;
+}
+.pad-2 {
+    padding: 40px;
+}
+.p-head {
+    background: linear-gradient(#d1d1d1 0%, #f2f2f2 100%);
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.financing {
+    text-align: center;
+}
+.financing p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.financing a {
+    text-transform: uppercase;
+    padding: 0px 30px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 28px;
+    color: #000;
+    position: relative;
+}
+.financing a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.financing a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.financing a:hover::before, .financing a:hover::after {
+    width: 100%;
+}
+.finance {
+    background: url(img/home/finance.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.finance h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 80px;
+    position: relative;
+}
+.finance h2::before {
+    content: "";
+    position: absolute;
+    background: url(img/home/handshake.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    left: 0%;
+    bottom: -42%;
+}
+.finance h2::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background: #000;
+    border-radius: 10px;
+    bottom: -50%;
+    left: 20%;
+    transform: rotate(19deg);
+}
+.finance p {
+    font-size: 28px;
+    line-height: 28px;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 80px;
+}
+.cradit {
+    text-align: center;
+}
+.woman {
+    position: relative;
+}
+.woman img {
+    position: absolute;
+    width: 80%;
+    height: 430px;
+    bottom: -151px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.p-crnt {
+    padding: 110px 0 60px;
+}
+.pc-head {
+    text-align: center;
+    position: relative;
+}
+.pc-head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    background: url(img/home/promo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 100%;
+    z-index: 0;
+    height: 140px;
+}
+.pc-head p {
+    font-size: 30px;
+    line-height: 46px;
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 20px;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+}
+.pc-head h2 {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 46px;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
+    top: 30px;
+}
+.pc-head h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 20%;
+    background: url(img/home/promotion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 66px;
+}
+.pc-head h2::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 5px;
+    height: 90px;
+    background: #000;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    right: 28%;
+    transform: rotate(20deg);
+}
+.pc-num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.n-1, .n-2, .n-3 {
+    text-align: center;
+}
+.n-1 img, .n-2 img, .n-3 img {
+    width: 70%;
+}
+.p-current {
+    background: #fff;
+}
+.p-appiont {
+    padding-top: 25px;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    padding-bottom: 90px;
+}
+.pa-treatment {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.pa-percentage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10px;
+    background: #0BB5B3;
+    height: 100%;
+    object-fit: cover;
+}
+.pa-percentage strong {
+    font-family: Impact;
+    font-size: 70px;
+    line-height: 84px;
+    color: #fff;
+}
+.pa-percentage span {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    min-width: 170px;
+    text-align: center;
+}
+.treatment-content {
+    margin-left: 20px;
+    padding-bottom: 2px;
+}
+.treatment-content h4 {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 31px;
+    color: #000;
+    text-transform: uppercase;
+}
+.treatment-content span {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
+}
+.treatment-content p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    margin-top: 14px;
+}
+.treatment-content a {
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    color: #000;
+    text-transform: uppercase;
+    padding: 0 12px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    position: relative;
+    margin-top: 20px;
+}
+.treatment-content a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.treatment-content a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.treatment-content a:hover::before, .treatment-content a:hover::after {
+    width: 100%;
+}
+
+  /*****************************************************/
+ /**************    11. Cosmetic Dentist Area  ****************/
+/*****************************************************/
+
+.cosmetic-dentist-main-area {
+    padding: 140px 0;
+}
+.cosmetic-dentist-area {
+    background: url(img/home/dotted.svg);
+    background-repeat: no-repeat;
+    background-position: 84% 22%;
+    background-size: auto 11%;
+    margin-bottom: -265px;
+}
+.office {
+    width: 65%;
+    height: auto;
+}
+.cd-content {
+    padding-right: 30px;
+}
+.cd-top {
+    font-size: 30px;
+    line-height: 46px;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+}
+.cd-top::after {
+    content: "";
+    position: absolute;
+    right: -170%;
+    background: url(img/home/brooklyn-bridge.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+.cd-content h4 {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 50px;
+    color: #000;
+    margin-top: 6px;
+}
+.cd-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    margin-top: 24px;
+}
+.cosmetic-dentist-content {
+    width: 65%;
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 0px 99px rgba(0, 0, 0, 0.1);
+    padding: 70px 60px 60px 60px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+    z-index: 9;
+    bottom: 265px;
+}
+.cd-image {
+    margin-top: auto;
+    margin-bottom: 10px;
+    width: 180%;
+}
+
+  /*****************************************************/
+ /**************    12. Dental Staff Area  ****************/
+/*****************************************************/
+
+.dental-staff-area {
+    display: flex;
+}
+.ds-head {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    background: #7B7A7A;
+    width: 104%;
+    padding: 70px 50px;
+}
+.ds-head span {
+    font-size: 30px;
+    line-height: 46px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.ds-head h4 {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 120px;
+}
+.dental-staff-content {
+    width: 50%;
+    background: #898989;
+    position: relative;
+}
+.dental-staff-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    padding: 410px 100px 75px 170px;
+}
+.dental-staff-image {
+    width: 50%;
+}
+
+  /*****************************************************/
+ /**************    13. Company Area  ****************/
+/*****************************************************/
+
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+.c-single {
+    padding: 0 15px;
+    width: 15%;
+}
+
+  /*****************************************************/
+ /**************    14. Footer Contact Area  ****************/
+/*****************************************************/
+
+.footer-contact-main-area {
+    background: #002D3B;
+    padding-bottom: 30px;
+}
+.footer-contact-area {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.fc-contact {
+    flex-grow: 3;
+    margin-top: 80px;
+    margin-left: -20px;
+}
+.fc-info ul li a {
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 350px;
+    padding: 5px 0;
+}
+.fc-info ul li a i {
+    color: #005969;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.fc-logo {
+    position: absolute;
+    top: -5%;
+    width: 10%;
+}
+.office-time {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 6;
+}
+.ot-service a {
+    display: list-item;
+    font-size: 14px;
+    line-height: 43px;
+    color: #fff;
+    border-bottom: 1px solid #3B5E68;
+    padding-right: 6px;
+    text-transform: capitalize;
+}
+.ot-service a:last-child {
+    border: none;
+}
+.ot-service h6 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0bb5b3;
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-left: 4px solid #0bb5b3;
+    margin-bottom: 50px;
+    margin-left: -10px;
+}
+.ot-hour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ot-hours h6 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0bb5b3;
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-left: 4px solid #0bb5b3;
+    margin-bottom: 50px;
+    margin-left: -10px;
+}
+.week ul li {
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.time ul li {
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-left: 12px;
+}
+.location {
+    flex-grow: 3;
+    margin-left: 30px;
+}
+.location h6 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0bb5b3;
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-left: 4px solid #0bb5b3;
+    margin-bottom: 50px;
+    margin-left: -10px;
+}
+.others-link {
+    margin: 8px 0px;
+}
+.others-link a {
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+  /*****************************************************/
+ /**************    15. Footer Area  ****************/
+/*****************************************************/
+
+.footer-area {
+    background: #005969;
+    padding: 50px 0;
+}
+.social-link {
+    margin-bottom: 24px;
+}
+.social-link ul li {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 0 6px;
+    transition: 0.4s
+}
+.social-link ul li:hover {
+    transform: rotate(-25deg);
+}
+.social-link ul li a i {
+    font-size: 26px;
+    color: #EDE6CD;
+}
+.f-area {
+    text-align: center;
+}
+.f-area p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.f-area p:last-child {
+    margin: 0;
+}
+
+
+/*       DOCTOR PROFILE PAGE  */
+
+
+  /*****************************************************/
+ /**************    15. Banner Area  ****************/
+/*****************************************************/
+
+.PB-area {
+    background: url(img/porfile/hero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -20px;
+}
+.profile-banner-area {
+    padding-top: 180px;
+}
+.pb-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 99px rgba(0, 0, 0, 0.1);
+    padding: 0px 100px 40px;
+}
+.dp-pic {
+    margin: -100px 0 25px;
+    max-width: 28%;
+}
+.signature {
+    margin-top: 5px;
+}
+.pb-area h2 {
+    font-size: 52px;
+    letter-spacing: 0.02em;
+    line-height: 64px;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+}
+.pb-area p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: ;
+    margin-bottom: 16px;
+}
+.p-dr {
+    font-size: 40px;
+    line-height: 46px;
+    color: #444;
+    text-transform: uppercase;
+    margin: 60px 0 20px;
+}
+
+
+
+/*       ABOUT PAGE      */
+
+
+  /*****************************************************/
+ /**************    1. About Page Area  ****************/
+/*****************************************************/
+
+.about-main-content-area {
+    background: url(img/porfile/hero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -20px;
+}
+.about-content-area {
+    text-align: center;
+}
+.about-content-area h2 {
+    font-size: 54px;
+    letter-spacing: 0.02em;
+    line-height: 87px;
+    color: #ede6cd;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+.about-content-area > p, .about-content-area > p a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+}
+.about-text {
+    width: 70%;
+    background: #fff;
+    box-shadow: 0px 0px 99px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 60px 80px 80px;
+    text-align: left;
+    margin-top: 10px;
+}
+.about-text p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 40px;
+}
+.span {
+    background: #F2F2F2;
+    padding: 40px 37px;
+    border-left: 5px solid #0bb5b3;
+    margin: 30px 0;
+    position: relative;
+}
+.span img {
+    position: absolute;
+    top: -6%;
+    right: -1%;
+}
+.about-text p a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    text-decoration: underline;
+}
+.about-text p a:hover {
+    text-decoration: none;
+}
+
+
+/*       DENTAL IMPLANS PAGE      */
+
+  /*****************************************************/
+ /**************    1. Brooklyn Dental Implants Area  ****************/
+/*****************************************************/
+
+.brooklyn {
+    margin-bottom: 40px;
+}
+.about-text h5 {
+    font-size: 40px;
+    line-height: 46px;
+    color: #000;
+    text-align: center;
+}
+.Procedures p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    margin: 30px 0 35px;
+}
+.Procedures ul {
+    margin-left: 60px;
+}
+.Procedures ul li {
+    list-style: disc;
+}
+.Procedures ul li a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    text-decoration: underline;
+}
+.Procedures ul li a:hover {
+    text-decoration: none;
+}
+.dental-function h5 {
+    margin-bottom: 30px;
+}
+.dental-function p a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    text-decoration: underline;
+}
+.advance-dental h5 {
+    margin-bottom: 30px;
+}
+.immediate-load {
+    background: #E7F0F3;
+    padding: 40px 35px 10px;
+    margin-bottom: 22px;
+}
+.immediate-load h6 {
+    font-size: 24px;
+    line-height: 46px;
+    color: #006583;
+    margin-bottom: 20px;
+}
+.d3-image a {
+    font-size: 24px;
+    line-height: 46px;
+    color: #006583;
+    margin-bottom: 20px;
+}
+.d3-image h5 {
+    margin-bottom: 30px;
+}
+.d3-image ul:last-child {
+    margin-left: 70px;
+}
+.d3-image ul:last-child li {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+}
+.plan h5 {
+    margin: 30px 0px;
+}
+.plan a {
+    font-size: 24px;
+    line-height: 46px;
+    color: #006583;
+    margin: 18px 0;
+}
+.multiple-implants h5 {
+    margin-bottom: 30px;
+}
+.multiple-implants a {
+    font-size: 24px;
+    line-height: 46px;
+    color: #006583;
+    margin-bottom: 10px;
+}
+.multiple-implants p:last-child {
+    font-weight: 800;
+}
+
+
+/*       COSMATIC PAGE      */
+
+  /*****************************************************/
+ /**************    15. Cosmatic Area  ****************/
+/*****************************************************/
+
+.about-cosmetic-dentistry-main-area {
+    background: url(img/porfile/hero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -20px;
+}
+.about-cosmetic-dentistry-area {
+    text-align: center;
+    position: relative;
+}
+.c-menu {
+    position: absolute;
+    top: 8.1%;
+    left: 0;
+}
+.schedule {
+    background: #002D3B;
+    padding: 15px 24px;
+    margin-left: -20px;
+    position: relative;
+    transition: 0.5s;
+}
+.schedule h6 {
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 12px 0 16px;
+    border-bottom: 1px solid #fff;
+}
+.schedule ul li {
+    text-align: left;
+}
+.schedule ul li:last-child {
+    margin-bottom: 20px;
+}
+.schedule ul li a {
+    font-size: 16px;
+    color: #fff;
+    padding: 12px 0;
+    border-bottom: 1px dotted #fff;
+}
+.schedule::after {
+    content: "";
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid #002D3B;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #002D3B;
+    z-index: 9;
+    top: 97.6%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #002D3B;
+}
+.s-head {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    padding: 8px 0px;
+    position: relative;
+    border-bottom: 2px solid #FFFFFF;
+}
+.s-head::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    transform: rotate(45deg);
+    width: 12px;
+    height: 12px;
+    border-top: 2.5px solid transparent;
+    border-bottom: 2.5px solid #fff;
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid #fff;
+    top: 12px;
+}
+.about-cosmetic-dentistry-area h2 {
+    font-size: 44px;
+    letter-spacing: 0.02em;
+    line-height: 80px;
+    color: #ede6cd;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+.about-cosmetic-dentistry-area > p, .about-cosmetic-dentistry-area > p a {
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+.cosmatic-content {
+    width: 68%;
+    background: #fff;
+    box-shadow: 0px 0px 99px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 60px 80px 80px;
+    text-align: left;
+    margin-top: 10px;
+}
+.cosmatic-content img {
+    margin-bottom: 40px;
+}
+.cosmatic-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 40px;
+}
+.cosmatic-content p a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    text-decoration: underline;
+}
+.cosmatic-content p a:hover {
+    text-decoration: none;
+}
+.cosmatic-content h5 {
+    font-size: 40px;
+    line-height: 46px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bold {
+    font-weight: bold;
+}
+.s-consaltation {
+    background: #0BB5B3;
+    padding: 30px 33px 20px;
+    margin-left: -20px;
+}
+.s-consaltation a {
+    font-size: 23px;
+    line-height: 32px;
+    color: #ede6cd;
+}
+
+
+/*       OUR TEAM PAGE      */
+
+  /*****************************************************/
+ /**************    15. Team Area  ****************/
+/*****************************************************/
+
+.team-main-area {
+    background: url(img/porfile/hero.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: -20px;
+    background-size: contain;
+}
+.team-area {
+    text-align: center;
+}
+.team-area h2 {
+    font-size: 54px;
+    letter-spacing: 0.02em;
+    line-height: 87px;
+    color: #ede6cd;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+.team-area > p, .team-area > p a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+}
+.team-content {
+    width: 70%;
+    background: #fff;
+    box-shadow: 0px 0px 99px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 60px 80px 80px;
+    text-align: left;
+    margin-top: 10px;
+}
+.hygienists {
+    margin-bottom: 40px;
+}
+.hygienists h5 {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 80px;
+}
+.single-hygienist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.sh-image {
+    width: 50%;
+}
+.sh-image img {
+    padding-right: 40px;
+    border-right: 1px solid #707070;
+}
+.sh-content {
+    width: 50%;
+}
+.sh-content h6 {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: #006583;
+}
+.sh-content p.p {
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
+.sh-content p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #333;
+    margin-top: 24px;
+}
+
+
+/*       TESTIMONIAL PAGE      */
+
+  /*****************************************************/
+ /**************    15. testimonial Area  ****************/
+/*****************************************************/
+
+.testimonials-main-area {
+    background: url(img/porfile/hero.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: -20px;
+    background-size: contain;
+}
+.testimonials-area {
+    text-align: center;
+}
+.testimonials-area h2 {
+    font-size: 54px;
+    letter-spacing: 0.02em;
+    line-height: 87px;
+    color: #ede6cd;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+.testimonials-area > p, .testimonials-area > p a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+}
+.testimonial-contents {
+    width: 70%;
+    background: #fff;
+    box-shadow: 0px 0px 99px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 60px 80px 80px;
+    text-align: left;
+    margin-top: 20px;
+}
+.tc-single {
+    margin-bottom: 80px;
+}
+.tct {
+    display: flex;
+    align-items: center;
+}
+.google {
+    margin-right: 15px;
+}
+.stars i {
+    color: #ffba00;
+    font-size: 17px;
+}
+.tct-reviewer {
+    display: inline-block;
+    margin-top: 15px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #000;
+}
+.tct-reviewer span {
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    line-height: 32px;
+    color: #006583;
+    text-transform: uppercase;
+}
+.tc-reviews {
+    position: relative;
+}
+.tc-reviews h6 {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    line-height: 32px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 22px 0 12px;
+}
+.tc-reviews p {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444;
+}
+.tc-reviews::before {
+    content: "";
+    position: absolute;
+    background: url(img/comma-ii.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -55px;
+}
+.position {
+    background-position: center;
+}
+
+
+/*       CONTACT PAGE      */
+
+  /*****************************************************/
+ /**************    15. Contact Area  ****************/
+/*****************************************************/
+
+.contact-page-main-area {
+    background: url(img/porfile/hero.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    margin-top: -20px;
+    background-size: contain;
+}
+.contact-page-main-area::before {
+    content: "";
+    position: absolute;
+    background: url(img/location.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40%;
+    top: 1%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-position: center;
+}
+.contact-page-area {
+    text-align: center;
+}
+.contact-page-area h2 {
+    font-size: 50px;
+    letter-spacing: 0.02em;
+    line-height: 80px;
+    color: #ede6cd;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+.contact-page-area > p, .contact-page-area > p a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+}
+.contact-content {
+    width: 70%;
+    background: #fff;
+    box-shadow: 0px 0px 99px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 870px 80px 80px;
+    text-align: left;
+    margin-top: 20px;
+}
+.c-form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.location-content {
+    width: 45%;
+}
+.location-content h6, .sms-area h6 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 36px;
+    color: #1d1d1d;
+    text-transform: capitalize;
+}
+.location-content span, .sms-area span {
+    width: 26px;
+    height: 2px;
+    background: #0bb5b3;
+    display: block;
+    margin: 20px 0;
+}
+.location-content p, .location-content a {
+    font-size: 17px;
+    line-height: 24px;
+    color: #6f6f6f;
+}
+.location-content p {
+    margin-bottom: 12px;
+}
+.location-content a {
+    text-decoration: underline;
+}
+.location-content a:hover {
+    text-decoration: none;
+}
+.sms-area {
+    width: 55%;
+}
+.sms-area span {
+    margin: 15px 0 25px;
+}
+.sms-area p {
+    font-size: 18px;
+    color: #161616;
+    margin-bottom: 15px;
+}
+.sms-area input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #9b9b9b;
+    padding: 2px 10px;
+    border-radius: 1px;
+}
+.sms-area textarea {
+    width: 100%;
+    height: 100px;
+}
+.sms-area button {
+    width: 75%;
+    border: none;
+    padding: 2px 25px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    line-height: 28px;
+    color: #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    cursor: pointer;
+    position: relative;
+    margin-top: 45px;
+    background: transparent;
+}
+.sms-area button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.sms-area button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: 0.3s;
+    width: 0%;
+    height: 2px;
+    background: #000;
+}
+.sms-area button:hover::before, .sms-area button:hover::after {
+    width: 100%;
+}
+.contact-text {
+    margin-top: 80px;
+}
+.contact-text h5 {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.c-text h6 {
+    font-size: 24px;
+    line-height: 46px;
+    color: #006583;
+    margin-bottom: 16px;
+}
+.c-text p, .c-text p a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 18px;
+}
+.c-text p a {
+    text-decoration: underline;
+}
+.c-text p a:hover {
+    text-decoration: none;
+}
